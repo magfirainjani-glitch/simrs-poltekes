@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMRS - Pendaftaran</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="header-menu">
+    <div class="title">
+        <h4>SIMRS</h4>
+    </div>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="pengguna.html">Pengguna</a>
+        <a class="active" href="pendaftaran.html">Pendaftaran</a>
+        <a href="rawatjalan.html">Rawat Jalan</a>
+    </div>
+    <div class="button-auth">
+        <button>Logout</button>
+    </div>
+</header>
+
+<div class="container">
+    <h2>Form Pendaftaran Pasien</h2>
+
+    <form>
+        <label>Nama Pasien</label>
+        <input type="text" placeholder="Masukkan nama pasien">
+
+        <label>No Rekam Medis</label>
+        <input type="text" placeholder="Masukkan No RM">
+
+        <label>NIK</label>
+        <input type="text" placeholder="Masukkan NIK">
+
+        <label>Tanggal Lahir</label>
+        <input type="date">
+
+        <label>Tujuan Poliklinik</label>
+        <select>
+            <option>Pilih Poliklinik</option>
+            <option>Poli Dalam</option>
+            <option>Poli Anak</option>
+            <option>Poli Gigi</option>
+        </select>
+
+        <label>Dokter Poliklinik</label>
+        <select>
+            <option>Pilih Dokter</option>
+            <option>Dr. Fira</option>
+            <option>Dr. Mira</option>
+            <option>Dr. Adam</option>
+        </select>
+
+        <button type="submit">Simpan</button>
+    </form>
+</div>
+
+</body>
+</html>

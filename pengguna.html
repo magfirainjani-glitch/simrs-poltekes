@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMRS - Pengguna</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+        .container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-menu">
+        <div class="title">
+            <h4>SIMRS</h4>
+        </div>
+        <div class="menu">
+            <a href="/index.html">Home</a>
+            <a class="active" href="/pengguna.html">Pengguna</a>
+            <a href="/pendaftaran.html">Pendaftaran</a>
+            <a href="rawatjalan.html">Rawat Jalan</a>
+        </div>
+        <div class="button-auth">
+            <button>Logout</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Data Pengguna</h2>
+
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Jabatan</th>
+                <th>Poliklinik</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dr. Fira</td>
+                <td>Dokter</td>
+                <td>Poli Dalam</td>
+                <td>Aktif</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>grace</td>
+                <td>Perawat</td>
+                <td>Poli Anak</td>
+                <td>Aktif</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>citra</td>
+                <td>Admin</td>
+                <td>Pendaftaran</td>
+                <td>Tidak Aktif</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

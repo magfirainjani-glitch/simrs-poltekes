@@ -1,0 +1,94 @@
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+    color: white;
+    padding: 12px;
+}
+
+.header-menu .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-menu .menu {
+    font-size: 16px;
+    display: flex;
+    gap: 14px;
+}
+
+.header-menu .menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu .menu .active {
+    color: black;
+}
+
+.header-menu .button-auth button {
+    background-color: red;
+    color: white;
+    border-radius: 16px;
+    padding: 12px;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+/* INI TETAP (JANGAN DIUBAH) */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.menu .card-menu {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    padding: 12px;
+}
+
+/* ========================= */
+/* TAMBAHAN KHUSUS FORM PENDAFTARAN */
+/* ========================= */
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.container h2 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
