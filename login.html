@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIMRS - Rawat Jalan</title>
+    <title>SIMRS - Login</title>
     <link rel="stylesheet" href="index.css" />
     <style>
         .container {
@@ -32,11 +32,11 @@
             <h4>SIMRS</h4>
         </div>
         <div class="menu">
-             <a href="/login.html">Login</a>
+            <a class="active" href="login.html">Login</a>
             <a href="/index.html">Home</a>
             <a href="/pengguna.html">Pengguna</a>
             <a href="/pendaftaran.html">Pendaftaran</a>
-            <a class="active" href="rawatjalan.html">Rawat Jalan</a>
+            <a href="/rawatjalan.html">Rawat Jalan</a>
         </div>
         <div class="button-auth">
             <button>Logout</button>
@@ -44,39 +44,15 @@
     </header>
 
     <div class="container">
-        <h2>Data Rawat Jalan</h2>
+        <h2>Login</h2>
 
-        <table>
-            <tr>
-                <th>No</th>
-                <th>Nama Pasien</th>
-                <th>No RM</th>
-                <th>Tujuan Poli</th>
-                <th>Dokter Poli</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Dika</td>
-                <td>RM001</td>
-                <td>Poli Dalam</td>
-                <td>Dr. Fira</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Galang</td>
-                <td>RM002</td>
-                <td>Poli Anak</td>
-                <td>Dr. Mira</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Nabila</td>
-                <td>RM003</td>
-                <td>Poli Gigi</td>
-                <td>Dr. Adam</td>
-            </tr>
-        </table>
-    </div>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Masuk</button>
+        <p id="error-msg"></p>
+    </form>
+</div>
 
 </body>
 </html>

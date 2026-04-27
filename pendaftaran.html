@@ -3,61 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIMRS - Pendaftaran</title>
-    <link rel="stylesheet" href="index.css">
+    <title>SIMRS - pendaftaran</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+        .container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
 </head>
 <body>
 
-<header class="header-menu">
-    <div class="title">
-        <h4>SIMRS</h4>
-    </div>
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="pengguna.html">Pengguna</a>
-        <a class="active" href="pendaftaran.html">Pendaftaran</a>
-        <a href="rawatjalan.html">Rawat Jalan</a>
-    </div>
-    <div class="button-auth">
-        <button>Logout</button>
-    </div>
-</header>
+    <header class="header-menu">
+        <div class="title">
+            <h4>SIMRS</h4>
+        </div>
+        <div class="menu">
+            <a href="/login.html">Login</a>
+            <a href="/index.html">Home</a>
+            <a href="/pengguna.html">Pengguna</a>
+            <a class="active" href="pendaftaran.html">Pendaftaran</a>
+            <a href="/rawatjalan.html">Rawat Jalan</a>
+        </div>
+        <div class="button-auth">
+            <button>Logout</button>
+        </div>
+    </header>
 
-<div class="container">
-    <h2>Form Pendaftaran Pasien</h2>
+    <div class="container">
+        <h2>Form Pendaftaran Pasien</h2>
 
-    <form>
-        <label>Nama Pasien</label>
-        <input type="text" placeholder="Masukkan nama pasien">
+    <form id="formPasien">
 
-        <label>No Rekam Medis</label>
-        <input type="text" placeholder="Masukkan No RM">
+        <label>Nama Lengkap</label>
+        <input type="text" required>
 
         <label>NIK</label>
-        <input type="text" placeholder="Masukkan NIK">
+        <input type="text" required>
+
+        <label>Jenis Kelamin</label>
+        <select required>
+            <option value="">-- Pilih --</option>
+            <option>Laki-laki</option>
+            <option>Perempuan</option>
+        </select>
 
         <label>Tanggal Lahir</label>
-        <input type="date">
+        <input type="date" required>
 
-        <label>Tujuan Poliklinik</label>
-        <select>
-            <option>Pilih Poliklinik</option>
-            <option>Poli Dalam</option>
-            <option>Poli Anak</option>
+        <label>Alamat</label>
+        <input type="text" required>
+
+        <label>No. HP</label>
+        <input type="tel" required>
+
+        <label>Poli Tujuan</label>
+        <select required>
+            <option value="">-- Pilih Poli --</option>
+            <option>Poli Umum</option>
             <option>Poli Gigi</option>
+            <option>Poli Anak</option>
+            <option>Poli Kandungan</option>
         </select>
 
-        <label>Dokter Poliklinik</label>
-        <select>
-            <option>Pilih Dokter</option>
-            <option>Dr. Fira</option>
-            <option>Dr. Mira</option>
-            <option>Dr. Adam</option>
-        </select>
+        <button type="submit">Daftar</button>
 
-        <button type="submit">Simpan</button>
     </form>
+
+    <p id="pesan"></p>
 </div>
+
+<script>
+    document.getElementById("formPasien").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        document.getElementById("pesan").textContent = "Pendaftaran berhasil!";
+    });
+</script>
+
 
 </body>
 </html>
