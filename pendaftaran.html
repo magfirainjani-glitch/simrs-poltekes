@@ -6,24 +6,66 @@
     <title>SIMRS - pendaftaran</title>
     <link rel="stylesheet" href="index.css" />
     <style>
-        .container {
-            padding: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid #ccc;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
+.container {
+    padding: 20px;
+}
+
+/* TABEL MODERN */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+th {
+    background: linear-gradient(to right, palevioletred, hotpink);
+    color: white;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* ISI */
+td {
+    padding: 12px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* GARIS HALUS */
+td, th {
+    border: none;
+}
+
+/* ZEBRA STRIPE */
+tr:nth-child(even) {
+    background-color: #fff0f5;
+}
+
+/* HOVER EFFECT */
+tr:hover {
+    background-color: #ffe4ec;
+    transition: 0.2s;
+}
+
+/* STATUS BADGE */
+td:last-child {
+    font-weight: bold;
+}
+
+td:last-child:contains("Aktif") {
+    color: green;
+}
+
+td:last-child:contains("Tidak Aktif") {
+    color: red;
+}
+</style>
 </head>
 <body>
 
